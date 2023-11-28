@@ -1,0 +1,133 @@
+/*Estilos globales*/
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(242, 188, 39);
+}
+/*Titulos globales*/
+h1{
+    text-align: center; 
+    text-justify: auto;
+    font-size: 3rem;
+    color: rgb(1, 1, 1);
+    text-shadow: rgb(7, 7, 7);
+}
+/*Estilos de las listas navegables globales*/
+ul{
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+    display: flex;       
+}
+li a{
+    text-decoration: none;
+    text-align: end;
+    margin: 20px;
+    color: rgb(10, 10, 10);
+}
+/*Footer Globales*/
+footer{
+    color: #2e2d2d;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*Estilo de main de index*/
+.index-main {
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    text-align: justify;  
+}
+.img-main{
+    float: left;
+    margin-right: 20px;
+    width: 35rem;
+    height: 25rem;
+}
+
+/*Estilos de Productos*/
+section{
+    display:ruby-base-container;
+                
+}
+/*Imagenes de Productos*/
+img{
+    width: 15rem;
+    height: 20rem;
+    
+}
+/*Precios de producto*/
+.p-producto {
+    font-weight: 900;
+    font-size: large;    
+}
+/*main de Productos*/
+.productos{
+    display: flex;
+    justify-content: left;
+    gap: 6rem;
+}  
+
+/*Botones del main productos*/
+button{
+    display:inline-flex;
+    padding: 10px 20px;
+    color: #8b0303;
+    background-color: rgb(250, 235, 215);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+}
+
+button:hover{
+    color:rgb(246, 242, 242);
+    background-color: rgb(0, 0, 0);
+}
+
+/*Mapa de Contactanos*/
+iframe{
+    width: 95rem;
+    height: 10rem;
+        
+}
+/*Main de las Recetas*/
+.recetas{
+    font-size: 20px;
+    font-weight: 200;
+    gap: 6rem;
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+}
+.recetario{
+    background-color: rgb(244, 228, 208);
+    
+}
+
+/*Calendario de EVENTOS*/
+div{
+    text-align: justify;
+    width: 700px;
+}
+
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 0px;
+}
+
+.first-day{
+    grid-column-start: 5;
+}
+.day-name{
+    background-color: rgb(244, 221, 190);
+    font-weight: bold;
+}
