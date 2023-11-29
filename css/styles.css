@@ -3,6 +3,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(242, 188, 39);
 }
+
 /*Titulos globales*/
 h1{
     text-align: center; 
@@ -11,6 +12,7 @@ h1{
     color: rgb(1, 1, 1);
     text-shadow: rgb(7, 7, 7);
 }
+
 /*Estilos de las listas navegables globales*/
 ul{
     list-style: none;
@@ -33,6 +35,7 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
 /*Estilo de main de index*/
 .index-main {
     margin-top: 0;
@@ -43,6 +46,7 @@ footer{
     display: flex;
     text-align: justify;  
 }
+
 .img-main{
     float: left;
     margin-right: 20px;
@@ -59,8 +63,8 @@ section{
 img{
     width: 15rem;
     height: 20rem;
-    
 }
+
 /*Precios de producto*/
 .p-producto {
     font-weight: 900;
@@ -69,8 +73,9 @@ img{
 /*main de Productos*/
 .productos{
     display: flex;
-    justify-content: left;
-    gap: 6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }  
 
 /*Botones del main productos*/
@@ -95,8 +100,8 @@ button:hover{
 iframe{
     width: 95rem;
     height: 10rem;
-        
 }
+
 /*Main de las Recetas*/
 .recetas{
     font-size: 20px;
@@ -108,13 +113,11 @@ iframe{
 }
 .recetario{
     background-color: rgb(244, 228, 208);
-    
 }
 
 /*Calendario de EVENTOS*/
 div{
     text-align: justify;
-    width: 700px;
 }
 
 ol{
