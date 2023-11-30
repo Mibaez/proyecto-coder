@@ -3,40 +3,11 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*Body globales MOBILE*/
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: rgb(242, 39, 76);
-    }
-    h3, h2{
-        color: rgb(199, 154, 5);
-    }
-}
-/*Body globales TABLET*/
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-    body {
-        background-color: rgb(242, 124, 39);
-    }
-    h3, h2{
-        color: rgb(242, 39, 76);
-        }
-}
-
-/*Body globales DESKTOP*/
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: rgb(242, 188, 39);
-    }
-    h3, h2{
-        color: rgb(242, 39, 76);
-        }
-}
-
 /*Titulos globales*/
 h1{
     text-align: center; 
-    text-justify: auto;
-    font-size: 3rem;
+    text-justify:auto
+    font-size: 48px;
     color: rgb(1, 1, 1);
     text-shadow: rgb(7, 7, 7);
 }
@@ -110,7 +81,7 @@ img{
 button{
     display:inline-flex;
     padding: 10px 20px;
-    color: #8b0303;
+    color: #8f0404;
     background-color: rgb(250, 235, 215);
     text-align: center;
     text-decoration: none;
@@ -156,11 +127,64 @@ ol{
     grid-template-columns: repeat(7,1fr);
     padding: 0px;
 }
-
 .first-day{
     grid-column-start: 5;
 }
 .day-name{
     background-color: rgb(244, 221, 190);
     font-weight: bold;
+}
+/*Body globales TABLET*/
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    body {
+        background-color: rgb(242, 124, 39);
+        font-size: 16px;
+    }
+    h3, h2{
+        color: rgb(242, 39, 76);
+    }
+    img{
+        max-width: 100%;
+    }
+    .index-main{  
+        font-size: 16px;
+        display: flex;
+    }
+    .img-main{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+/*Body globales MOBILE*/
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: rgb(242, 39, 76);
+        font-size: 14px;
+    }
+    h3, h2{
+        color: rgb(199, 154, 5);
+    }
+    img{
+        width: 100%
+    };
+    .index-main{  
+        font-size: 14px;
+        display: flex;
+    }
+    .img-main{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/*Body globales DESKTOP*/
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: rgb(242, 188, 39);
+    }
+    h3, h2{
+        color: rgb(242, 39, 76);
+    }
 }
