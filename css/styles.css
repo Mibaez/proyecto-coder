@@ -6,10 +6,11 @@
 /*Titulos globales*/
 h1{
     text-align: center; 
-    text-justify:auto
+    text-justify:auto;
     font-size: 48px;
     color: rgb(1, 1, 1);
     text-shadow: rgb(7, 7, 7);
+
 }
 
 /*Estilos de las listas navegables globales*/
