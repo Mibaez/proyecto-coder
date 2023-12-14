@@ -188,3 +188,18 @@ ol{
         color: rgb(242, 39, 76);
     }
 }
+/*Carrusel de IMAGENES*/
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    object-fit: cover;
+    background-color:none;
+    width: 200px;
+    height: 400px;
+}
