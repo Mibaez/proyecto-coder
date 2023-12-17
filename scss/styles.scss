@@ -1,205 +1,147 @@
-/*Estilos globales*/
+@import "./components/responsive";
+@import "./components/footer";
+@import "./base/variable";
+@import "./base/maps";
+
+// Estilos globales
 * {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*Titulos globales*/
-h1{
-    text-align: center; 
-    text-justify:auto;
-    font-size: 48px;
-    color: rgb(1, 1, 1);
-    text-shadow: rgb(7, 7, 7);
+  // Titulos globales
+h1 {
+    text-align: center;
+    text-justify: auto;
+    font-size: map-get($titulos,tamanio);
+    color: map-get($titulos,color);
+    text-shadow: map-get($titulos,sombra);
 }
 
-/*Estilos de las listas navegables globales*/
-ul{
+  // Estilos de las listas navegables globales
+ul {
     list-style: none;
     margin-left: 10px;
     padding: 0;
-    display: flex;       
+    display: flex;
 }
-li a{
+
+li a {
     text-decoration: none;
     text-align: end;
     margin: 20px;
     color: rgb(10, 10, 10);
 }
-/*Footer Globales*/
-footer{
-    color: #2e2d2d;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
-/*Estilo de main de index*/
+// Estilo de main de index
 .index-main {
-    margin-top: 0;
-    margin-left: 10px;
-    padding: 0;
-    font-size: 20px;
-    font-weight: normal;
-    display: flex;
-    text-align: justify;  
-}
-
-.img-main{
-    float: left;
+padding: 0;
+font-weight: normal;
+display: flex;
+text-align: justify;
+.img-main {
+    float: center;
     margin-right: 20px;
     width: 35rem;
     height: 25rem;
 }
-
-/*Estilos de Productos*/
-section{
-    display:ruby-base-container;
+.p1 {
+    text-align: justify;
 
 }
-/*Imagenes de Productos*/
-img{
+}
+
+// Estilos de Productos
+section {
+    display: ruby-base-container;
+}
+
+// Imagenes de Productos
+img {
     width: 15rem;
     height: 20rem;
 }
 
-/*Precios de producto*/
+// Precios de producto
 .p-producto {
     font-weight: 900;
-    font-size: large;    
+    font-size: large;
 }
-/*main de Productos*/
-.productos{
+
+// Main de Productos
+.productos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-}  
-
-/*Botones del main productos*/
-button{
-    display:inline-flex;
+// Botones del main productos
+button {
+    display: inline-flex;
     padding: 10px 20px;
     color: #8f0404;
-    background-color: rgb(250, 235, 215);
+    background-color: $color-backround;
     text-align: center;
     text-decoration: none;
     border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;  
-}
-
-button:hover{
-    color:rgb(246, 242, 242);
+cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+    color: rgb(246, 242, 242);
     background-color: rgb(0, 0, 0);
 }
+}
+}
 
-/*Mapa de Contactanos*/
-iframe{
+// Mapa de Contactanos
+iframe {
     width: 95rem;
     height: 10rem;
 }
 
-/*Main de las Recetas*/
-.recetas{
+// Main de las Recetas
+.recetas {
     font-size: 20px;
     font-weight: 200;
     gap: 6rem;
     display: flex;
     text-align: justify;
     justify-content: space-around;
-}
-.recetario{
-    background-color: rgb(244, 228, 208);
+
+    .recetario {
+    background-color: $color-backround;
     padding: 2%;
     border-radius: 20%;
+    }
 }
 
-/*Calendario de EVENTOS*/
-.container  {
+// Calendario de EVENTOS
+.container {
     text-align: justify;
     border: 1px solid #ddd;
     width: 500px;
     padding: 1em;
     cursor: pointer;
-    box-shadow: -.5px 3px 5px rgba(0,0,0,2);
-}
+    box-shadow: -.5px 3px 5px rgba(0, 0, 0, 2);
 
-ol{
+    ol {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 0px;
-}
-.first-day{
+    }
+    .first-day {
     grid-column-start: 5;
-}
-.day-name{
-    background-color: rgb(244, 221, 190);
+    }
+    .day-name {
+    background-color: $color-backround;
     font-weight: bold;
-}
-.dayx{
-    background-color: #bc0505;
+    }
+
+    .dayx {
+    background-color: $color-resaltador;
     padding: 2 2;
-    
-}
-/*Body globales TABLET*/
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-    body {
-        background-color: rgb(242, 124, 39);
-        font-size: 16px;
-    }
-    h3, h2{
-        color: rgb(242, 39, 76);
-    }
-    img{
-        max-width: 100%;
-    }
-    .index-main{  
-        font-size: 16px;
-        display: flex;
-    }
-    .img-main{
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-/*Body globales MOBILE*/
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: rgb(242, 39, 76);
-        font-size: 14px;
-    }
-    h3, h2{
-        color: rgb(199, 154, 5);
-    }
-    img{
-        width: 100%
-    };
-    .index-main{  
-        font-size: 14px;
-        display: flex;
-    }
-    .img-main{
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-
-/*Body globales DESKTOP*/
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: rgb(242, 188, 39);
-    }
-    h3, h2{
-        color: rgb(242, 39, 76);
     }
 }
-
-/*Carrusel de IMAGENES*/
+// Carrusel de IMAGENES
 .carrusel {
     display: flex;
     flex-wrap: nowrap;
@@ -210,7 +152,7 @@ ol{
     flex: 1 0 auto;
     margin: 0 50px;
     object-fit: cover;
-    background-color:none;
+    background-color: none;
     width: 200px;
     height: 400px;
 }
