@@ -117,8 +117,13 @@ iframe{
 }
 
 /*Calendario de EVENTOS*/
-div{
+.container  {
     text-align: justify;
+    border: 1px solid #ddd;
+    width: 500px;
+    padding: 1em;
+    cursor: pointer;
+    box-shadow: -.5px 3px 5px rgba(0,0,0,2);
 }
 
 ol{
@@ -133,6 +138,11 @@ ol{
 .day-name{
     background-color: rgb(244, 221, 190);
     font-weight: bold;
+}
+.dayx{
+    background-color: #bc0505;
+    padding: 2 2;
+    
 }
 /*Body globales TABLET*/
 @media only screen and (min-width: 501px) and (max-width: 960px) {
