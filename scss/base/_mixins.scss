@@ -1,0 +1,11 @@
+@import "./variable";
+
+@mixin cardbot (){
+    display: inline-flex;
+    padding: 10px 20px;
+    color: rgb(127, 10, 10);
+    background-color: $color-backround;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
